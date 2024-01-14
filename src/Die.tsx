@@ -1,6 +1,13 @@
 import {useEffect} from "react"
 
-export default function Die(props){
+interface DieProps {
+    id: string;
+    src: string;
+    value: string;
+    setSoundName: (p: string) => void;
+}
+
+export default function Die(props: DieProps){
 
 
     function handleClick(){
